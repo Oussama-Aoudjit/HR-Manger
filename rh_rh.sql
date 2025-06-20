@@ -63,17 +63,6 @@ CREATE TABLE `notifications` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `notifications`
---
-
-INSERT INTO `notifications` (`id`, `utilisateur_id`, `message`, `lien`, `vue`, `date_notification`) VALUES
-(8, 9, 'Votre demande de congé a été refusée', NULL, 0, '2025-05-21 18:40:01'),
-(9, 9, 'Votre demande de congé a été refusée', NULL, 0, '2025-05-22 15:09:15'),
-(10, 9, 'Votre demande de congé a été refusée', NULL, 0, '2025-05-22 15:09:17');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `utilisateurs`
 --
 
@@ -93,12 +82,8 @@ CREATE TABLE `utilisateurs` (
 
 INSERT INTO `utilisateurs` (`id`, `nom`, `prenom`, `email`, `password`, `role`, `date_inscription`) VALUES
 (8, 'system', 'admin', 'admin@gmail.com', '$2y$10$T8YtclXeFNpN43YsHTt8LOvDq25.g5cKWxnCA3W2MkycyMUXYd3Va', 'admin', '2025-05-21 18:36:02'),
-(9, 'oussama', 'aoudjit', 'oussamaaoudjit@gmail.com', '$2y$10$o1WNMxU1RNV/RJlvyqJTEeLdna5eqp6557CgEJQJ42bK2nEkCmZyK', 'user', '2025-05-21 18:38:37'),
-(11, 'Admin', 'System', 'admin@rh.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', '2025-04-18 17:20:06');
+--
 
---
--- Indexes for dumped tables
---
 
 --
 -- Indexes for table `demandes_conge`
