@@ -38,16 +38,6 @@ CREATE TABLE `demandes_conge` (
   `date_demande` datetime DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `demandes_conge`
---
-
-INSERT INTO `demandes_conge` (`id`, `utilisateur_id`, `date_debut`, `date_fin`, `type_conge`, `raison`, `statut`, `date_demande`) VALUES
-(7, 9, '2025-05-21', '2025-05-31', 'Maladie', 'je suis gravement malade ', 'refuse', '2025-05-21 18:38:54'),
-(9, 9, '2025-05-22', '2025-05-31', 'Maladie', '', 'refuse', '2025-05-22 15:05:32'),
-(10, 9, '2025-05-30', '2025-06-19', 'Congé annuel', '', 'refuse', '2025-05-22 15:05:59');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `notifications`
